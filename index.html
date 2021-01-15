@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-fillmode</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .box{
+            width: 100px;
+            height: 50px;
+            background: rgb(209, 109, 109);
+            margin-left: 20px;
+            animation: sample  2s 5s;
+            animation-fill-mode:none;
+            animation-iteration-count: infinite;
+
+
+        }
+        @keyframes sample{
+            20%{background: yellow;width: 100px;height: 50px;}
+            50%{background: green;width: 300px;height: 50px;}
+            70%{background: blue;width: 500px;height: 50px;}
+            100%{background: red;width: 900px;height: 50px;}
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="margin-bottom: 50px;">animation-fillmode</h1>
+    <div class="box"></div>
+
+    
+</body>
+</html>
